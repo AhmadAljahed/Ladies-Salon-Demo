@@ -801,3 +801,79 @@ ul { list-style: none; }
   .services__grid { grid-template-columns: 1fr; }
   .testimonials__track { grid-template-columns: 1fr; }
 }
+
+/* =============================================
+   WHATSAPP BUTTONS
+   ============================================= */
+
+/* --- Contact section WhatsApp button --- */
+.social-btn--whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--charcoal) 0%, #3D2E28 100%);
+  border: 1px solid var(--gold) !important;
+  color: var(--gold) !important;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+.social-btn--whatsapp:hover {
+  background: #25D366;
+  border-color: #25D366 !important;
+  color: var(--white) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37,211,102,.35);
+}
+.social-btn--whatsapp svg { flex-shrink: 0; transition: transform .3s; }
+.social-btn--whatsapp:hover svg { transform: scale(1.15); }
+
+/* --- Floating WhatsApp button --- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--charcoal);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 14px 22px 14px 18px;
+  border-radius: 50px;
+  font-family: var(--ff-body);
+  font-size: .72rem;
+  font-weight: 300;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 8px 30px rgba(42,36,34,.25);
+  transition: all .3s ease;
+  animation: floatIn .6s ease .8s both;
+}
+.whatsapp-float:hover {
+  background: #25D366;
+  border-color: #25D366;
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(37,211,102,.4);
+}
+.whatsapp-float svg { flex-shrink: 0; transition: transform .3s; }
+.whatsapp-float:hover svg { transform: rotate(-8deg) scale(1.1); }
+
+.whatsapp-float__label { white-space: nowrap; }
+
+@keyframes floatIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Collapse to icon only on small screens */
+@media (max-width: 480px) {
+  .whatsapp-float { padding: 14px; border-radius: 50%; }
+  .whatsapp-float__label { display: none; }
+}
