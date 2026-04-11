@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMIÈRE — Ladies Salon</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">LUMIÈRE</div>
+    <ul class="nav__links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#book" class="btn btn--outline nav__cta">Book Now</a>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="#book" class="mobile-link btn btn--gold">Book Now</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__grain"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Luxury Beauty Studio</p>
+      <h1 class="hero__title reveal">
+        Where Beauty<br /><em>Becomes Art</em>
+      </h1>
+      <p class="hero__sub reveal">
+        Indulge in bespoke hair, skin & nail treatments crafted<br />
+        for the modern woman.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#book" class="btn btn--gold">Reserve Your Chair</a>
+        <a href="#services" class="btn btn--ghost">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__line"></div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="strip__inner">
+      <span>Hair & Styling</span><span class="dot">✦</span>
+      <span>Skin Treatments</span><span class="dot">✦</span>
+      <span>Nail Art</span><span class="dot">✦</span>
+      <span>Bridal Packages</span><span class="dot">✦</span>
+      <span>Lash & Brow</span><span class="dot">✦</span>
+      <span>Hair & Styling</span><span class="dot">✦</span>
+      <span>Skin Treatments</span><span class="dot">✦</span>
+      <span>Nail Art</span><span class="dot">✦</span>
+      <span>Bridal Packages</span><span class="dot">✦</span>
+      <span>Lash & Brow</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What We Offer</p>
+        <h2 class="section-title">Our Services</h2>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">✂</div>
+          <h3>Hair Styling</h3>
+          <p>From precision cuts to creative colour transformations, our stylists bring your vision to life.</p>
+          <ul>
+            <li>Cut & Blowdry — from 80 KWD</li>
+            <li>Highlights & Balayage — from 150 KWD</li>
+            <li>Keratin Treatment — from 200 KWD</li>
+          </ul>
+          <a href="#book" class="service-card__link">Book →</a>
+        </div>
+
+        <div class="service-card service-card--featured reveal">
+          <div class="service-card__badge">Popular</div>
+          <div class="service-card__icon">✿</div>
+          <h3>Skin & Facial</h3>
+          <p>Revitalise your skin with our signature facials and advanced skin treatments.</p>
+          <ul>
+            <li>Signature Glow Facial — 120 KWD</li>
+            <li>HydraFacial — 180 KWD</li>
+            <li>Anti-Aging Lift — 220 KWD</li>
+          </ul>
+          <a href="#book" class="service-card__link">Book →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">◇</div>
+          <h3>Nail Artistry</h3>
+          <p>Elegant nail care and stunning nail art designs for every occasion.</p>
+          <ul>
+            <li>Classic Manicure — 30 KWD</li>
+            <li>Gel Extensions — 70 KWD</li>
+            <li>Nail Art Design — from 50 KWD</li>
+          </ul>
+          <a href="#book" class="service-card__link">Book →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">♛</div>
+          <h3>Bridal Package</h3>
+          <p>Complete bridal beauty preparation from hair to flawless makeup for your special day.</p>
+          <ul>
+            <li>Bridal Hair — from 300 KWD</li>
+            <li>Bridal Makeup — from 250 KWD</li>
+            <li>Full Bridal Package — from 800 KWD</li>
+          </ul>
+          <a href="#book" class="service-card__link">Book →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">◉</div>
+          <h3>Lash & Brow</h3>
+          <p>Frame your eyes beautifully with our precision lash and brow services.</p>
+          <ul>
+            <li>Lash Lift & Tint — 80 KWD</li>
+            <li>Classic Lash Extensions — 120 KWD</li>
+            <li>Brow Lamination — 60 KWD</li>
+          </ul>
+          <a href="#book" class="service-card__link">Book →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">❋</div>
+          <h3>Massage & Spa</h3>
+          <p>Unwind with our relaxing body treatments and therapeutic massage sessions.</p>
+          <ul>
+            <li>Relaxation Massage — 100 KWD</li>
+            <li>Hot Stone Therapy — 140 KWD</li>
+            <li>Full Body Scrub — 120 KWD</li>
+          </ul>
+          <a href="#book" class="service-card__link">Book →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__visual reveal">
+        <div class="about__img-wrap">
+          <div class="about__img-placeholder">
+            <span>✦</span>
+          </div>
+          <div class="about__tag">Est. 2015</div>
+        </div>
+        <div class="about__stat-row">
+          <div class="about__stat">
+            <strong>12,000+</strong>
+            <span>Happy Clients</span>
+          </div>
+          <div class="about__stat">
+            <strong>18</strong>
+            <span>Expert Stylists</span>
+          </div>
+          <div class="about__stat">
+            <strong>9 yr</strong>
+            <span>Of Excellence</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__text reveal">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">More Than a Salon,<br /><em>A Sanctuary</em></h2>
+        <p>Founded in the heart of Kuwait City, LUMIÈRE was born from a single belief — every woman deserves to feel extraordinary. We combine timeless elegance with modern techniques to create an experience that goes beyond beauty.</p>
+        <p>Our team of internationally trained stylists and therapists are dedicated to your transformation. Every appointment is a private ritual, crafted uniquely for you.</p>
+        <div class="about__values">
+          <div class="about__value">
+            <span class="about__value-icon">✦</span>
+            <div>
+              <strong>Premium Products Only</strong>
+              <p>We use exclusively luxury, skin-safe brands.</p>
+            </div>
+          </div>
+          <div class="about__value">
+            <span class="about__value-icon">✦</span>
+            <div>
+              <strong>Private & Discreet</strong>
+              <p>Ladies-only environment, always respectful.</p>
+            </div>
+          </div>
+          <div class="about__value">
+            <span class="about__value-icon">✦</span>
+            <div>
+              <strong>Certified Professionals</strong>
+              <p>All our team hold international certifications.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#book" class="btn btn--gold">Meet Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Our Work</p>
+        <h2 class="section-title">Gallery</h2>
+      </div>
+      <div class="gallery__grid reveal">
+        <div class="gallery__item gallery__item--tall">
+          <div class="gallery__placeholder"><span>Hair</span></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder"><span>Nails</span></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder"><span>Skin</span></div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <div class="gallery__placeholder"><span>Bridal</span></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder"><span>Lash</span></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__placeholder"><span>Colour</span></div>
+        </div>
+      </div>
+      <p class="gallery__note reveal">Replace placeholder boxes with real photos — recommended 800×1000px</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Client Love</p>
+        <h2 class="section-title">What They Say</h2>
+      </div>
+      <div class="testimonials__track reveal">
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"The best salon experience in Kuwait. The team is incredibly skilled and the atmosphere is so calming and luxurious."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">F</div>
+            <div>
+              <strong>Fatima Al-Rashidi</strong>
+              <span>Loyal Client since 2019</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"I came for my wedding prep and they made me feel like royalty. My hair and makeup were absolutely perfect."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">M</div>
+            <div>
+              <strong>Maryam Hassan</strong>
+              <span>Bridal Client</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"Professional, clean, and truly luxurious. My skin glows for weeks after every facial. Cannot recommend enough!"</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">N</div>
+            <div>
+              <strong>Noor Al-Sabah</strong>
+              <span>Monthly Member</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="book">
+    <div class="booking__bg">
+      <div class="hero__orb hero__orb--1"></div>
+    </div>
+    <div class="container booking__inner reveal">
+      <p class="section-tag">Reserve</p>
+      <h2 class="section-title">Book Your Appointment</h2>
+      <p class="booking__sub">Fill in your details and our team will confirm within 2 hours.</p>
+      <div class="booking__form">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" class="form-input" />
+          <input type="tel" placeholder="Phone Number" class="form-input" />
+        </div>
+        <div class="form-row">
+          <select class="form-input form-select">
+            <option value="" disabled selected>Select Service</option>
+            <option>Hair Styling</option>
+            <option>Skin & Facial</option>
+            <option>Nail Artistry</option>
+            <option>Bridal Package</option>
+            <option>Lash & Brow</option>
+            <option>Massage & Spa</option>
+          </select>
+          <input type="date" class="form-input" />
+        </div>
+        <textarea class="form-input form-textarea" placeholder="Any special requests or notes…"></textarea>
+        <button class="btn btn--gold btn--full">Request Appointment</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info reveal">
+        <p class="section-tag">Find Us</p>
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__item">
+          <span>📍</span>
+          <div>
+            <strong>Location</strong>
+            <p>Block 5, Al Salmiya, Kuwait City, Kuwait</p>
+          </div>
+        </div>
+        <div class="contact__item">
+          <span>📞</span>
+          <div>
+            <strong>Phone</strong>
+            <p>+965 2222 3333</p>
+          </div>
+        </div>
+        <div class="contact__item">
+          <span>⏰</span>
+          <div>
+            <strong>Hours</strong>
+            <p>Sun – Thu: 9:00 AM – 9:00 PM</p>
+            <p>Fri – Sat: 10:00 AM – 10:00 PM</p>
+          </div>
+        </div>
+        <div class="contact__item">
+          <span>✉</span>
+          <div>
+            <strong>Email</strong>
+            <p>hello@lumieresalon.kw</p>
+          </div>
+        </div>
+        <div class="contact__social">
+          <a href="#" class="social-btn">Instagram</a>
+          <a href="#" class="social-btn">WhatsApp</a>
+          <a href="#" class="social-btn">Snapchat</a>
+        </div>
+      </div>
+      <div class="contact__map reveal">
+        <div class="map-placeholder">
+          <span>📍 Map goes here</span>
+          <small>Embed Google Maps iframe</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">LUMIÈRE</div>
+      <p class="footer__tagline">Where Beauty Becomes Art</p>
+      <ul class="footer__links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="footer__copy">© 2024 LUMIÈRE Ladies Salon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
